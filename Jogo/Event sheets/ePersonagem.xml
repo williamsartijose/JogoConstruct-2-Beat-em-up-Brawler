@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ePersonagem</name>
+    <events>
+        <event-group description="" sid="333451474914858" title="Controlador de Animações">
+            <sub-events>
+                <event-block sid="115369078730314">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="566410241661280" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="292916837989583" type="Personagem">
+                            <param id="0" name="Animation">Personagem.estado</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="573150639211184">
+                            <conditions>
+                                <condition behavior="8Direction" id="0" name="Is moving" sid="693462457021139" type="Personagem" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="656818147891610" type="Personagem">
+                                    <param id="0" name="Instance variable">estado</param>
+                                    <param id="1" name="Value">&quot;Walk&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="374685697155803">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="970108992203203" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="586430440117427" type="Personagem">
+                                    <param id="0" name="Instance variable">estado</param>
+                                    <param id="1" name="Value">&quot;Idle&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="157972603419903" title="Input Teclado e Gamepad">
+            <sub-events>
+                <event-block sid="497586705128609">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="961845298244040" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="358201098489204" type="Personagem">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="459164976552204" type="Personagem">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="466851646223090">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="559080769323310" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="285248253754727" type="Personagem">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="237846625893347" type="Personagem">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="846796614793520">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="412189940350899" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="323507260360284" type="Personagem">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="975530494385110">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="288302136746918" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="164271319987742" type="Personagem">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="636020777819196">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="186500087723585" type="Personagem">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Y co-ordinate">130</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="762460589430444" type="Personagem">
+                    <param id="0" name="Y">130</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

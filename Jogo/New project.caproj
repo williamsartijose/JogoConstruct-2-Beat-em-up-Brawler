@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>2qpiupr2gjili</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>320</width>
+        <height>180</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Fullscreen scaling quality">Low</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use iOS retina display">All devices</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Gamepad" sid="996683554706134">
+            <plugin id="gamepad" />
+        </object-type>
+        <object-type name="Keyboard" sid="4436305314906168">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Audio" sid="2722091819329769">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Browser" sid="3498868852026895">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="TiledBackground" sid="708263893454490">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Fundo1" sid="456601069572993">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\WSJ\Downloads\JOGO\Nível Cidade\bg1.png" />
+        </object-type>
+        <object-type name="Fundo2" sid="553690239887687">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\WSJ\Downloads\JOGO\Nível Cidade\bg3.png" />
+        </object-type>
+        <object-type name="Personagem" sid="802628334645604">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="estado" sid="507398806801873" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="475085103258254">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="633878720366689">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="8" loop="0" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="514312690259795" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Idle\Mike_Idle8.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Idle\Mike_Idle7.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Idle\Mike_Idle6.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Idle\Mike_Idle5.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Idle\Mike_Idle4.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Idle\Mike_Idle3.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Idle\Mike_Idle2.png" />
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Idle\Mike_Idle1.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="941778817764392" speed="5">
+                    <frame duration="1" hotspotX="0.538462" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Walk\Mike_Walk4.png" />
+                    <frame duration="1" hotspotX="0.545455" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Walk\Mike_Walk3.png" />
+                    <frame duration="1" hotspotX="0.545455" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Walk\Mike_Walk2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\WSJ\Downloads\JOGO\Beat&apos;em up Personagem\Walk\Mike_Walk1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Fase.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ePrincipal.xml</event-sheet>
+        <event-sheet>ePersonagem.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Gamepad" uid="2">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
+        <global-instance type="Keyboard" uid="3" />
+        <global-instance type="Audio" uid="6">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="7" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
